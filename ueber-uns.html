@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Über uns – Testhaus in Hannover seit 1989 | Hitest GmbH</title>
+  <meta name="description" content="Hitest GmbH: unabhängiges Testhaus für Mikroelektronik in Hannover. Wurzeln seit 1989, ISO 9001:2015 zertifiziert, beim DLR gelistet.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      corePlugins: { preflight: false },
+      theme: {
+        extend: {
+          colors: {
+            primary: 'var(--color-primary)', secondary: 'var(--color-secondary)', accent: 'var(--color-accent)',
+            bg: 'var(--color-bg)', text: 'var(--color-text)', muted: 'var(--color-muted)', line: 'var(--color-line)',
+          },
+          fontFamily: { display: 'var(--font-display)', body: 'var(--font-body)', mono: 'var(--font-mono)' },
+        },
+        fontSize: {
+          xs: 'var(--text-xs)', sm: 'var(--text-sm)', base: 'var(--text-base)', lg: 'var(--text-lg)',
+          xl: 'var(--text-xl)', '2xl': 'var(--text-2xl)', '3xl': 'var(--text-3xl)', '4xl': 'var(--text-4xl)',
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+
+<!-- ============ HEADER (auf allen Seiten identisch) ============ -->
+<header class="site-header">
+  <div class="container-site site-header__inner">
+    <a href="index.html" class="site-logo" aria-label="Hitest GmbH – Startseite">
+      <!-- TODO: Logo durch Vektorversion (brand_assets/) ersetzen -->
+      <img src="http://www.hitest.de/bilder/layout/logo.gif" alt="Hitest" width="120" height="36">
+    </a>
+    <nav class="nav-main" data-nav aria-label="Hauptnavigation">
+      <a href="leistungen.html">Leistungen</a>
+      <a href="branchen.html">Branchen</a>
+      <a href="ausstattung.html">Ausstattung</a>
+      <a href="ueber-uns.html">Über uns</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+    <div class="header-actions">
+      <a href="tel:+4951151569000" class="header-phone">+49 511 5156-9000</a>
+      <a href="kontakt.html" class="btn btn-accent header-cta">Testanfrage stellen</a>
+      <button class="menu-toggle" type="button" aria-controls="mobile-menu" aria-expanded="false" aria-label="Menü öffnen">
+        <svg data-icon="open" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg data-icon="close" hidden width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<div id="mobile-menu" class="mobile-menu">
+  <nav data-nav aria-label="Mobile Navigation">
+    <a href="index.html">Start <span aria-hidden="true">→</span></a>
+    <a href="leistungen.html">Leistungen <span aria-hidden="true">→</span></a>
+    <a href="branchen.html">Branchen <span aria-hidden="true">→</span></a>
+    <a href="ausstattung.html">Ausstattung <span aria-hidden="true">→</span></a>
+    <a href="ueber-uns.html">Über uns <span aria-hidden="true">→</span></a>
+    <a href="kontakt.html">Kontakt <span aria-hidden="true">→</span></a>
+  </nav>
+  <div class="mobile-menu__contact">
+    <a href="kontakt.html" class="btn btn-accent" style="width:100%;margin-bottom:var(--space-2)">Testanfrage stellen</a>
+    <a href="tel:+4951151569000">+49 511 5156-9000</a>
+    <a href="mailto:info@hitest.de">info@hitest.de</a>
+  </div>
+</div>
+<!-- ============ /HEADER ============ -->
+
+<main>
+
+  <section class="section" style="padding-top:var(--space-6)">
+    <div class="container-site grid gap-10 md:grid-cols-12 md:items-center">
+      <div class="md:col-span-7">
+        <p class="eyebrow">Über uns</p>
+        <h1 class="mt-3">Seit 1989 in Hannover. Unabhängig.</h1>
+        <p class="lead mt-6">Hitest testet, qualifiziert und analysiert mikroelektronische und elektrische Komponenten als Dienstleistung – vom Wafer über Einzelbauteile bis zur Baugruppe.</p>
+        <p class="mt-4">Wir arbeiten für anspruchsvolle Anwendungen in Luft- und Raumfahrt, Automobilbau, Medizintechnik und Industrieelektronik, mit hochwertiger Messtechnik und leistungsfähigen Testsystemen. Eine Spezialität ist das Qualifizieren und Screenen von EEE-Komponenten für die Raumfahrt. Hitest arbeitet mit zahlreichen namhaften Unternehmen zusammen.</p>
+      </div>
+      <figure class="media md:col-span-5" style="aspect-ratio:4/3;box-shadow:var(--shadow-floating)">
+        <img src="https://images.unsplash.com/photo-1578496479914-7ef3b0193be3?auto=format&fit=crop&w=800&h=600&q=75" alt="Das Hitest-Team im Labor" width="800" height="600">
+          <!-- Demo-Bild (Unsplash) – vor Launch durch eigenes Hitest-Foto ersetzen -->
+      </figure>
+    </div>
+  </section>
+
+  <section class="section grid-bg" aria-labelledby="u1">
+    <div class="container-site grid gap-10 md:grid-cols-12">
+      <div class="md:col-span-4">
+        <h2 id="u1" style="font-size:var(--text-2xl)">Geschichte</h2>
+      </div>
+      <ol class="timeline md:col-span-8">
+        <li><p class="year">1989</p><p class="mt-1">Start als Teil des SICAN-Projekts in Hannover – Testentwicklung und Serientest für Mikroelektronik.</p></li>
+        <li><p class="year">2008</p><p class="mt-1">Seit dem 1. Oktober 2008 arbeitet das Unternehmen als <strong>Hitest GmbH</strong>.</p></li>
+        <li><p class="year">2015</p><p class="mt-1">Partner der Space IC GmbH – berichtet im DLR-Newsletter „Countdown“ (Ausgabe 29).</p></li>
+        <li><p class="year">Heute</p><p class="mt-1">ISO 9001:2015 zertifiziert, beim DLR als Testhaus für EEE-Raumfahrtbauteile gelistet.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="u2">
+    <div class="container-site grid gap-6 md:grid-cols-2">
+      <div class="surface-elevated p-6 md:p-8">
+        <p class="eyebrow">Qualität</p>
+        <h2 id="u2" class="mt-3" style="font-size:var(--text-xl)">ISO 9001:2015 – zertifiziert durch TÜV Nord</h2>
+        <p class="mt-3 muted">Unser Qualitätsmanagement deckt Testentwicklung, Serientest und Qualifikation ab.</p>
+        <a class="download mt-3" href="http://www.hitest.de/downloads.php?id=215">Zertifikat DIN EN ISO 9001:2015 <small>PDF · 197 kB</small></a>
+      </div>
+      <div class="surface-elevated p-6 md:p-8">
+        <p class="eyebrow">Netzwerke</p>
+        <h2 class="mt-3" style="font-size:var(--text-xl)">Vernetzt in Luft- und Raumfahrt</h2>
+        <ul class="mt-4 grid gap-3 text-sm">
+          <li><strong>DLR</strong> – gelistet als Assembly- &amp; Testhaus im deutschen Portal für EEE-Raumfahrtbauteile.</li>
+          <li><strong>Competence Center Aerospace Kassel Calden (CCA)</strong> – über 50 Unternehmen und Forschungsinstitute bündeln ihre Kompetenzen.</li>
+          <li><strong>Niedersachsen Aviation</strong> – Aerospace Business Network mit über 250 Unternehmen der Luftfahrt.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--color-white);border-block:1px solid var(--color-line)" aria-labelledby="u3">
+    <div class="container-site grid gap-10 md:grid-cols-12">
+      <div class="md:col-span-4">
+        <h2 id="u3" style="font-size:var(--text-2xl)">Geschäftsführung</h2>
+      </div>
+      <div class="md:col-span-8 grid gap-6 sm:grid-cols-2">
+        <div class="flex items-center gap-4">
+          <span class="avatar" role="img" aria-label="Initialen Dr. Michael Zimmermann">MZ</span>
+          <div><p class="font-bold">Dr. Michael Zimmermann</p><p class="text-sm muted">Geschäftsführer</p></div>
+        </div>
+        <div class="flex items-center gap-4">
+          <span class="avatar" role="img" aria-label="Initialen Dirk Pankrath">DP</span>
+          <div><p class="font-bold">Dirk Pankrath</p><p class="text-sm muted">Geschäftsführer</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="u4">
+    <div class="container-site grid gap-10 md:grid-cols-12">
+      <div class="md:col-span-4">
+        <h2 id="u4" style="font-size:var(--text-2xl)">Downloads</h2>
+      </div>
+      <ul class="md:col-span-8 grid gap-1 sm:grid-cols-2">
+        <li><a class="download" href="http://www.hitest.de/downloads.php?id=199">Firmenpräsentation <small>PDF · 1,2 MB</small></a></li>
+        <li><a class="download" href="http://www.hitest.de/downloads.php?id=202" hreflang="en">Company Presentation (EN) <small>PDF · 1,2 MB</small></a></li>
+        <li><a class="download" href="http://www.hitest.de/downloads.php?id=219">Übersicht <small>PDF · 246 kB</small></a></li>
+        <li><a class="download" href="http://www.hitest.de/downloads.php?id=225" hreflang="en">Overview (EN) <small>PDF · 94 kB</small></a></li>
+        <li><a class="download" href="http://www.hitest.de/downloads.php?id=185">AGB <small>PDF · 58 kB</small></a></li>
+        <li><a class="download" href="http://www.hitest.de/downloads.php?id=186" hreflang="en">General Terms (EN) <small>PDF · 59 kB</small></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="cta-band" aria-labelledby="cta-title">
+    <div class="container-site section grid gap-8 md:grid-cols-12 md:items-end">
+      <div class="md:col-span-8">
+        <h2 id="cta-title">Lernen wir uns kennen.</h2>
+        <p class="mt-4" style="color:var(--color-on-dark)">Erzählen Sie uns von Ihrem Projekt – wir melden uns schnell.</p>
+      </div>
+      <div class="md:col-span-4 flex flex-col items-start gap-2 md:items-end">
+        <a href="kontakt.html" class="btn btn-light">Testanfrage stellen</a>
+        <a href="tel:+4951151569000" class="cta-contact">+49 511 5156-9000</a>
+        <a href="mailto:info@hitest.de" class="cta-contact">info@hitest.de</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER (auf allen Seiten identisch) ============ -->
+<footer class="site-footer">
+  <div class="container-site grid gap-10 py-16 sm:grid-cols-2 lg:grid-cols-4">
+    <div>
+      <span class="footer-logo"><img src="http://www.hitest.de/bilder/layout/logo.gif" alt="Hitest" width="100" height="30" loading="lazy"></span>
+      <p class="mt-4">Testhaus für Mikroelektronik und Hochfrequenz-Komponenten</p>
+      <address class="mt-4 not-italic">Garbsener Landstr. 10<br>30419 Hannover</address>
+    </div>
+    <div>
+      <h2>Navigation</h2>
+      <ul>
+        <li><a href="leistungen.html">Leistungen</a></li>
+        <li><a href="branchen.html">Branchen</a></li>
+        <li><a href="ausstattung.html">Ausstattung</a></li>
+        <li><a href="ueber-uns.html">Über uns</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Kontakt</h2>
+      <ul>
+        <li><a href="tel:+4951151569000">Tel. +49 511 5156-9000</a></li>
+        <li><span style="display:inline-flex;min-height:36px;align-items:center">Fax +49 511 5156-9001</span></li>
+        <li><a href="mailto:info@hitest.de">info@hitest.de</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Qualität</h2>
+      <p>ISO 9001:2015 zertifiziert (TÜV Nord)<br>DLR-gelistetes Testhaus für EEE-Bauteile</p>
+      <a href="http://www.hitest.de/downloads.php?id=215" class="mt-2">Zertifikat (PDF)</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container-site flex flex-wrap items-center justify-between gap-4 py-6">
+      <p>© <span id="year">2026</span> Hitest GmbH</p>
+      <ul class="flex gap-6">
+        <li><a href="impressum.html">Impressum</a></li>
+        <li><a href="datenschutz.html">Datenschutz</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<!-- ============ /FOOTER ============ -->
+
+</body>
+</html>

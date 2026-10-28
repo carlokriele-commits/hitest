@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Leistungen – Testentwicklung, Qualifikation, Serientest, Fehleranalyse | Hitest GmbH</title>
+  <meta name="description" content="Testentwicklung, Qualifikation und Upscreening, Wafer- und Serientest bis 50 GHz, Fehleranalyse, Strahlungstests und Prüfung verdächtiger Bauteile.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      corePlugins: { preflight: false },
+      theme: {
+        extend: {
+          colors: {
+            primary: 'var(--color-primary)', secondary: 'var(--color-secondary)', accent: 'var(--color-accent)',
+            bg: 'var(--color-bg)', text: 'var(--color-text)', muted: 'var(--color-muted)', line: 'var(--color-line)',
+          },
+          fontFamily: { display: 'var(--font-display)', body: 'var(--font-body)', mono: 'var(--font-mono)' },
+        },
+        fontSize: {
+          xs: 'var(--text-xs)', sm: 'var(--text-sm)', base: 'var(--text-base)', lg: 'var(--text-lg)',
+          xl: 'var(--text-xl)', '2xl': 'var(--text-2xl)', '3xl': 'var(--text-3xl)', '4xl': 'var(--text-4xl)',
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+
+<!-- ============ HEADER (auf allen Seiten identisch) ============ -->
+<header class="site-header">
+  <div class="container-site site-header__inner">
+    <a href="index.html" class="site-logo" aria-label="Hitest GmbH – Startseite">
+      <!-- TODO: Logo durch Vektorversion (brand_assets/) ersetzen -->
+      <img src="http://www.hitest.de/bilder/layout/logo.gif" alt="Hitest" width="120" height="36">
+    </a>
+    <nav class="nav-main" data-nav aria-label="Hauptnavigation">
+      <a href="leistungen.html">Leistungen</a>
+      <a href="branchen.html">Branchen</a>
+      <a href="ausstattung.html">Ausstattung</a>
+      <a href="ueber-uns.html">Über uns</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+    <div class="header-actions">
+      <a href="tel:+4951151569000" class="header-phone">+49 511 5156-9000</a>
+      <a href="kontakt.html" class="btn btn-accent header-cta">Testanfrage stellen</a>
+      <button class="menu-toggle" type="button" aria-controls="mobile-menu" aria-expanded="false" aria-label="Menü öffnen">
+        <svg data-icon="open" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg data-icon="close" hidden width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<div id="mobile-menu" class="mobile-menu">
+  <nav data-nav aria-label="Mobile Navigation">
+    <a href="index.html">Start <span aria-hidden="true">→</span></a>
+    <a href="leistungen.html">Leistungen <span aria-hidden="true">→</span></a>
+    <a href="branchen.html">Branchen <span aria-hidden="true">→</span></a>
+    <a href="ausstattung.html">Ausstattung <span aria-hidden="true">→</span></a>
+    <a href="ueber-uns.html">Über uns <span aria-hidden="true">→</span></a>
+    <a href="kontakt.html">Kontakt <span aria-hidden="true">→</span></a>
+  </nav>
+  <div class="mobile-menu__contact">
+    <a href="kontakt.html" class="btn btn-accent" style="width:100%;margin-bottom:var(--space-2)">Testanfrage stellen</a>
+    <a href="tel:+4951151569000">+49 511 5156-9000</a>
+    <a href="mailto:info@hitest.de">info@hitest.de</a>
+  </div>
+</div>
+<!-- ============ /HEADER ============ -->
+
+<main>
+
+  <section class="section grid-bg" style="padding-block:var(--space-8)">
+    <div class="container-site">
+      <p class="eyebrow">Leistungen</p>
+      <h1 class="mt-3" style="max-width:18ch">Bauteiltests aus einer Hand</h1>
+      <p class="lead mt-6">Von der ersten Testidee bis zur Analyse eines Rückläufers: Sie beauftragen den ganzen Weg oder genau den Schritt, den Sie brauchen.</p>
+    </div>
+  </section>
+
+  <div class="container-site section grid gap-12 lg:grid-cols-12">
+    <aside class="hidden lg:block lg:col-span-3">
+      <nav class="subnav sticky" style="top:calc(var(--header-h) + var(--space-4))" aria-label="Leistungen auf dieser Seite">
+        <p class="eyebrow mb-3">Auf dieser Seite</p>
+        <a href="#testentwicklung">01 Testentwicklung</a>
+        <a href="#qualifikation">02 Qualifikation</a>
+        <a href="#serientest">03 Serientest</a>
+        <a href="#hochfrequenz">Hochfrequenz bis 50 GHz</a>
+        <a href="#fehleranalyse">04 Fehleranalyse</a>
+        <a href="#strahlung">Strahlungstests TID/SEE</a>
+        <a href="#bauteilpruefung">Prüfung verdächtiger Bauteile</a>
+        <a href="#weitere">Weitere Leistungen</a>
+      </nav>
+    </aside>
+
+    <div class="lg:col-span-9 grid gap-20">
+
+      <!-- 01 Testentwicklung -->
+      <section id="testentwicklung" aria-labelledby="t1">
+        <p class="eyebrow">01 · Test entwickeln</p>
+        <h2 id="t1" class="mt-3">Schlüsselfertige Tests – inklusive Hardware</h2>
+        <p class="mt-4">Wir entwickeln Qualifikations- und Serientests mit allen nötigen Komponenten. Ausgangspunkt sind Ihre Bauteil- und Testspezifikation und das Umfeld, in dem der Test später laufen soll. Jeder Schritt baut auf dem vorigen auf:</p>
+        <ol class="mt-6 grid gap-3 sm:grid-cols-2">
+          <li class="surface p-4"><span class="mono text-sm" style="color:var(--color-primary)">1</span> Testkonzept</li>
+          <li class="surface p-4"><span class="mono text-sm" style="color:var(--color-primary)">2</span> Softwareentwicklung</li>
+          <li class="surface p-4"><span class="mono text-sm" style="color:var(--color-primary)">3</span> Testhardware</li>
+          <li class="surface p-4"><span class="mono text-sm" style="color:var(--color-primary)">4</span> Testverifizierung</li>
+          <li class="surface p-4"><span class="mono text-sm" style="color:var(--color-primary)">5</span> Testoptimierung</li>
+          <li class="surface p-4"><span class="mono text-sm" style="color:var(--color-primary)">6</span> Transfer in die Produktion</li>
+        </ol>
+        <p class="mt-6 muted">Zur Testentwicklung gehört auch die Definition der Ergebnisdaten – etwa statistische Auswertungen, Messwertdaten oder Wafermaps. Bestehende Testprogramme konvertieren wir auf unsere Systeme.</p>
+        <a class="download mt-4" href="http://www.hitest.de/downloads.php?id=191">Entwicklung und Optimierung von Bauteiletests <small>PDF · 77 kB</small></a>
+      </section>
+
+      <!-- 02 Qualifikation -->
+      <section id="qualifikation" aria-labelledby="t2">
+        <p class="eyebrow">02 · Qualifizieren</p>
+        <h2 id="t2" class="mt-3">Qualifikation, Upscreening und Lot Acceptance</h2>
+        <div class="mt-6 grid gap-10 md:grid-cols-2">
+          <div>
+            <h3>Qualifikation</h3>
+            <p class="mt-2">Für Automotive und Raumfahrt wird oft eine Qualifikation verlangt. Wir entwickeln Hardware und Testprogramme, führen die Stresstests durch, werten aus und erstellen die Unterlagen zur Zertifizierung – komplett oder als Einzeltest.</p>
+            <ul class="list-tick mt-4 text-sm">
+              <li>Preconditioning, HAST, Autoclave</li>
+              <li>Temperature Cycling, Temperature Shock</li>
+              <li>HTOL, LTOL, HTSL, ELFR, Burn In</li>
+              <li>ESD nach HBM, MM, CDM · Latch Up · Gate Leakage</li>
+              <li>Package Tests</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Upscreening</h3>
+            <p class="mt-2">Standardbauteile, die jenseits ihres Datenblatts eingesetzt werden, prüfen wir – vor allem für die Raumfahrt – in einem festen Ablauf bei −195 °C bis +300 °C:</p>
+            <ul class="list-tick mt-4 text-sm">
+              <li>Testprogramm und Testhardware</li>
+              <li>Elektrischer Eingangstest bei Tief-, Raum- und Hochtemperatur</li>
+              <li>Temperaturwechsel, Temperaturschock, Burn In</li>
+              <li>Elektrischer Ausgangstest, Ausgangsinspektion</li>
+              <li>Datenauswertung und Dokumentation</li>
+            </ul>
+          </div>
+        </div>
+        <div class="surface mt-8 p-6">
+          <h3>Lot Acceptance Tests</h3>
+          <p class="mt-2">In kritischen Anwendungen wird jedes Produktionslos vor der Weiterverarbeitung freigegeben. Wir entwickeln das Verfahren – als Teil eines Upscreenings, nach Ausfällen im Feld (gemeinsame Fehleranalyse, dann Stichprobentest je Los) oder als Qualitätskontrolle nach IEC 62240 für Bauteile außerhalb ihres Temperaturbereichs.</p>
+        </div>
+        <p class="mt-6 flex flex-wrap gap-2">
+          <span class="tag">MIL-STD-883</span><span class="tag">MIL-STD-750</span><span class="tag">ESCC</span><span class="tag">NASA-STD</span><span class="tag">JEDEC</span><span class="tag">AEC-Q</span><span class="tag">DIN · ISO · IEC</span><span class="tag">Kundenvorschrift</span>
+        </p>
+        <a class="download mt-4" href="http://www.hitest.de/downloads.php?id=195">Qualifikationen, Upscreenings und Lot Acceptance Tests <small>PDF · 205 kB</small></a>
+      </section>
+
+      <!-- 03 Serientest -->
+      <section id="serientest" aria-labelledby="t3">
+        <p class="eyebrow">03 · In Serie testen</p>
+        <h2 id="t3" class="mt-3">Wafer und gehäuste Bauteile</h2>
+        <div class="mt-6 grid gap-10 md:grid-cols-2">
+          <div>
+            <h3>Wafertest</h3>
+            <p class="mt-2">Funktionale und parametrische Tests prüfen jede einzelne Komponente – digital, analog und Mixed Signal. Die Ergebnisse markieren defekte Chips oder liefern Wafermaps für die weitere Produktion.</p>
+            <dl class="mt-4 grid grid-cols-2 gap-3 text-sm">
+              <div><dt class="muted">Wafergröße</dt><dd class="mono" style="color:var(--color-primary)">3" bis 8"</dd></div>
+              <div><dt class="muted">Temperatur</dt><dd class="mono" style="color:var(--color-primary)">0 bis 150 °C</dd></div>
+              <div><dt class="muted">Reinraum</dt><dd class="mono" style="color:var(--color-primary)">Klasse 1000/10000</dd></div>
+              <div><dt class="muted">Parallel</dt><dd class="mono" style="color:var(--color-primary)">bis 8 Sites</dd></div>
+            </dl>
+          </div>
+          <div>
+            <h3>Gehäuste Bauteile</h3>
+            <p class="mt-2">Wir prüfen den Verpackungsprozess und alle Parameter, die das Gehäuse beeinflusst – besonders die HF-Eigenschaften. Sortierung nach Pass/Fail oder in Leistungsklassen.</p>
+            <dl class="mt-4 grid grid-cols-2 gap-3 text-sm">
+              <div><dt class="muted">Automatisch</dt><dd class="mono" style="color:var(--color-primary)">−85 bis +200 °C</dd></div>
+              <div><dt class="muted">Manuell</dt><dd class="mono" style="color:var(--color-primary)">−195 bis +300 °C</dd></div>
+              <div><dt class="muted">Pins</dt><dd class="mono" style="color:var(--color-primary)">3 bis 500</dd></div>
+              <div><dt class="muted">Gehäuse</dt><dd class="mono" style="color:var(--color-primary)">7×7 bis 28×28 mm</dd></div>
+            </dl>
+            <p class="mt-3 text-sm muted">QFP, QFN, BGA, PLCC, CLCC, SOP, DIL u. a. – manuell auch diskrete Bauteile.</p>
+          </div>
+        </div>
+        <p class="mt-6">Aus den Messdaten erstellen wir Datenlogs, Statistiken, Histogramme, Shmoo Plots und Delta-Kalkulationen – um Tests zu optimieren, Prozesse zu überwachen oder Alterungseffekte bei Qualifikationen sichtbar zu machen.</p>
+        <a class="download mt-4" href="http://www.hitest.de/downloads.php?id=193">Test von Komponenten <small>PDF · 472 kB</small></a>
+
+        <!-- Hochfrequenz -->
+        <div id="hochfrequenz" class="surface-elevated mt-10 overflow-hidden grid md:grid-cols-5">
+          <figure class="media md:col-span-2" style="border-radius:0;min-height:14rem">
+            <img src="https://images.unsplash.com/photo-1650530415027-dc9199f473ec?auto=format&fit=crop&w=600&h=600&q=75" alt="Hochfrequenz-Messplatz mit Netzwerkanalysator" width="600" height="600" loading="lazy">
+          <!-- Demo-Bild (Unsplash) – vor Launch durch eigenes Hitest-Foto ersetzen -->
+          </figure>
+          <div class="p-6 md:p-8 md:col-span-3">
+            <p class="eyebrow">Besonderheit</p>
+            <h3 class="mt-2" style="font-size:var(--text-xl)">Hochfrequenztests bis 50 GHz – auch in Serie</h3>
+            <p class="mt-3">Unsere automatischen Testsysteme sind um HF-Messtechnik erweitert. So testen wir HF-Filter, Hochfrequenztransistoren, Synthesizer, opto-elektronische Frontends und SoCs mit analogen Komponenten – mit Fokus auf Signalführung, EMV und Signalintegrität.</p>
+            <ul class="list-tick mt-4 text-sm">
+              <li>S-Parameter bis 50 GHz</li>
+              <li>Bandbreite von Verstärkern und Filtern, Rauschzahlen (LNA, OpAmps)</li>
+              <li>Time Domain Reflectometry für Leiterbahnen</li>
+              <li>Vektor-Signalanalyse bis 2,6 GHz, Modulationsanalyse bis 26,5 GHz</li>
+            </ul>
+            <a class="download mt-4" href="http://www.hitest.de/downloads.php?id=194">Hochfrequenztests für Qualifikation und Produktion <small>PDF · 215 kB</small></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 04 Fehleranalyse -->
+      <section id="fehleranalyse" aria-labelledby="t4">
+        <p class="eyebrow">04 · Ausfälle analysieren</p>
+        <h2 id="t4" class="mt-3">Fehleranalyse von Rückläufern</h2>
+        <p class="mt-4">Trotz aller Qualitätssicherung fallen Bauteile im Betrieb aus – nach Wochen oder nach Jahren. Der erste Schritt: Wir wiederholen den Produktionstest unter identischen Bedingungen. Diese Möglichkeit halten wir für <strong>5 bis 10 Jahre</strong> vor. Oft zeigen die Messwerte bereits, ob die Ursache in der Entwicklung, der Produktion oder im Einsatz der Komponente liegt.</p>
+        <p class="mt-4">Reicht das nicht, gehen wir weiter – bis zur Reproduktion des Fehlers und zu fehlerspezifischen Test- und Vermeidungsstrategien:</p>
+        <ul class="list-tick list-cols mt-4 text-sm">
+          <li>Elektrische Analysen von −195 °C bis +300 °C</li>
+          <li>Optische Mikroskopie, Röntgen</li>
+          <li>DPA, SAM, PIND</li>
+          <li>Chemisches/mechanisches Öffnen</li>
+          <li>ESD-Tests, Leakage Tests</li>
+          <li>Pressure Cooker, HAST</li>
+          <li>Mechanischer Schock, Vibration</li>
+          <li>Temperaturwechsel und -schock</li>
+          <li>HTOL, LTOL, ELFR</li>
+          <li>Radiation Tests</li>
+          <li>Packaging von Prototypen</li>
+          <li>Fehlerspezifische Testprogramme, Screenings</li>
+        </ul>
+        <p class="mt-4 muted text-sm">Alle Maßnahmen gibt es einzeln oder kombiniert – ergänzt durch unser Partnernetzwerk.</p>
+      </section>
+
+      <!-- Strahlung -->
+      <section id="strahlung" aria-labelledby="t5" class="grid-bg p-6 md:p-10" style="border-radius:var(--radius)">
+        <p class="eyebrow">Spezialgebiet Raumfahrt</p>
+        <h2 id="t5" class="mt-3">Strahlungstests: TID und SEE</h2>
+        <p class="mt-4">Strahlung ist einer der wichtigsten Faktoren für die Zuverlässigkeit von Elektronik in Luft- und Raumfahrt – abhängig von Strahlungsart, Technologie und Einsatzgebiet, teils sogar von Los zu Los. Wir übernehmen Tests und Vorbereitung: Bestrahlungsplan aus den Einsatzbedingungen, Testhardware und Testprogramm, Präparation der Muster.</p>
+        <div class="mt-8 grid gap-6 md:grid-cols-2">
+          <div class="surface p-6">
+            <h3>Total Ionizing Dose (TID)</h3>
+            <ul class="list-tick mt-3 text-sm">
+              <li>Gamma-Dosisraten von 0 bis &gt;80 krad(Si)/h</li>
+              <li>Co60-Quellen oder Linearbeschleuniger</li>
+              <li>Mit oder ohne Bias, Zwischenmessungen nach Testplan</li>
+              <li>Annealing bei Hoch- und Raumtemperatur</li>
+              <li>Analyse der Parameter über Zeit und Dosis</li>
+            </ul>
+          </div>
+          <div class="surface p-6">
+            <h3>Single Event Effects (SEE)</h3>
+            <ul class="list-tick mt-3 text-sm">
+              <li>Schwerionen passend zum benötigten LET</li>
+              <li>Mehrere Bauteile gleichzeitig</li>
+              <li>Latch-Up-Erkennung durch hochsensible Stromüberwachung</li>
+              <li>Fehlermodelle SEU, SET, SEL u. a.</li>
+              <li>Protokollierung aller Ereignisse</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bauteilprüfung -->
+      <section id="bauteilpruefung" aria-labelledby="t6">
+        <p class="eyebrow">Bauteile vom Graumarkt</p>
+        <h2 id="t6" class="mt-3">Verdächtige Bauteile prüfen – in bis zu 10 Stufen</h2>
+        <p class="mt-4">Bei Bauteileknappheit kommt Material oft von Lieferanten, die keine Qualität garantieren: ESD-Schäden, B-Sortierungen, gefälschte Kennzeichnungen, sogar leere Gehäuse. Unser Prüfverfahren baut Stufe für Stufe auf – mit jeder Stufe steigen Aufwand und Erkenntnistiefe. Sie entscheiden, wie weit wir gehen.</p>
+        <div class="mt-8 grid gap-10 md:grid-cols-5">
+          <ol class="steps-ladder md:col-span-3">
+            <li><span class="flex items-center justify-between gap-4">Optische Inspektion <span class="ladder-track"><span class="ladder-bar" style="width:10%"></span></span></span></li>
+            <li><span class="flex items-center justify-between gap-4">Röntgen <span class="ladder-track"><span class="ladder-bar" style="width:19%"></span></span></span></li>
+            <li><span class="flex items-center justify-between gap-4">Öffnen, interne Inspektion <span class="ladder-track"><span class="ladder-bar" style="width:28%"></span></span></span></li>
+            <li><span class="flex items-center justify-between gap-4">Elektrischer Kontakttest <span class="ladder-track"><span class="ladder-bar" style="width:37%"></span></span></span></li>
+            <li><span class="flex items-center justify-between gap-4">Test mit Versorgungsspannung <span class="ladder-track"><span class="ladder-bar" style="width:46%"></span></span></span></li>
+            <li><span class="flex items-center justify-between gap-4">Einfacher Funktionstest <span class="ladder-track"><span class="ladder-bar" style="width:55%"></span></span></span></li>
+            <li><span class="flex items-center justify-between gap-4">Test der DC-Parameter <span class="ladder-track"><span class="ladder-bar" style="width:64%"></span></span></span></li>
+            <li><span class="flex items-center justify-between gap-4">Test in der Applikation <span class="ladder-track"><span class="ladder-bar" style="width:73%"></span></span></span></li>
+            <li><span class="flex items-center justify-between gap-4">Parametrisch + funktional in Applikation <span class="ladder-track"><span class="ladder-bar" style="width:82%"></span></span></span></li>
+            <li><span class="flex items-center justify-between gap-4">Burn In <span class="ladder-track"><span class="ladder-bar" style="width:91%"></span></span></span></li>
+          </ol>
+          <div class="md:col-span-2 grid gap-6 content-start">
+            <div class="surface p-6">
+              <h3>Überlagerte Bauteile</h3>
+              <p class="mt-2 text-sm">Verarbeitbarkeit prüfen wir in zwei Schritten: optische Inspektion und Lötbarkeitstest.</p>
+            </div>
+            <div class="surface p-6">
+              <h3>Dokumentation</h3>
+              <p class="mt-2 text-sm">Zu jeder Stufe erhalten Sie ein Prüfprotokoll mit geprüften Bauteilen, eingesetzten Mitteln und Ergebnissen.</p>
+            </div>
+            <div class="surface p-6" style="border-left:4px solid var(--color-accent)">
+              <h3>Wir sind schnell</h3>
+              <p class="mt-2 text-sm">Die erste Reaktion auf Ihre Anfrage kommt meist innerhalb weniger Minuten. Je nach Auslastung starten wir direkt nach Beauftragung.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Weitere -->
+      <section id="weitere" aria-labelledby="t7">
+        <p class="eyebrow">Ergänzend</p>
+        <h2 id="t7" class="mt-3" style="font-size:var(--text-2xl)">Weitere Leistungen</h2>
+        <div class="mt-6 grid gap-8 md:grid-cols-3 text-sm">
+          <div>
+            <h3>Logistik</h3>
+            <p class="mt-2 muted">Lagerung nach dem Test und Versand bei Bedarf.</p>
+            <ul class="list-tick mt-3">
+              <li>Bake &amp; Drypack</li>
+              <li>Waferlagerung im Reinraum und unter Stickstoff</li>
+              <li>Ein- und Ausgangsinspektion</li>
+              <li>Sägen von Wafern, Verpacken von Einzeldice</li>
+              <li>Weltweiter Versand, End-of-Life-Management</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Elektronikentwicklung</h3>
+            <p class="mt-2 muted">Baugruppen und Systeme – mit Blick auf Materialkosten, Fertigung, Lebensdauer und Stückzahl.</p>
+            <ul class="list-tick mt-3">
+              <li>HF-, Sensor- und µController-Anwendungen</li>
+              <li>Spannungsversorgungen</li>
+              <li>Vom Konzept über Layout bis zur Prototypenfertigung</li>
+              <li>Qualifizierung, Produktionsbegleitung</li>
+            </ul>
+            <a class="download mt-2" href="http://www.hitest.de/downloads.php?id=216">Elektronikentwicklung <small>PDF · 69 kB</small></a>
+          </div>
+          <div>
+            <h3>Kostengünstiger Final Test</h3>
+            <p class="mt-2 muted">Ein großer Teil der NRE-Kosten steckt im Test Board. Unsere Lösung: ein systemspezifisches Motherboard bleibt, nur eine kleine, bauteilspezifische Daughtercard wird neu gebaut. Das senkt die Einmalkosten deutlich – bei etwas geringeren Anforderungen.</p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <section class="cta-band" aria-labelledby="cta-title">
+    <div class="container-site section grid gap-8 md:grid-cols-12 md:items-end">
+      <div class="md:col-span-8">
+        <h2 id="cta-title">Welcher Test passt zu Ihrem Bauteil?</h2>
+        <p class="mt-4" style="color:var(--color-on-dark)">Schicken Sie uns Bauteil und Anforderung – wir schlagen Ihnen den passenden Weg vor.</p>
+      </div>
+      <div class="md:col-span-4 flex flex-col items-start gap-2 md:items-end">
+        <a href="kontakt.html" class="btn btn-light">Testanfrage stellen</a>
+        <a href="tel:+4951151569000" class="cta-contact">+49 511 5156-9000</a>
+        <a href="mailto:info@hitest.de" class="cta-contact">info@hitest.de</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER (auf allen Seiten identisch) ============ -->
+<footer class="site-footer">
+  <div class="container-site grid gap-10 py-16 sm:grid-cols-2 lg:grid-cols-4">
+    <div>
+      <span class="footer-logo"><img src="http://www.hitest.de/bilder/layout/logo.gif" alt="Hitest" width="100" height="30" loading="lazy"></span>
+      <p class="mt-4">Testhaus für Mikroelektronik und Hochfrequenz-Komponenten</p>
+      <address class="mt-4 not-italic">Garbsener Landstr. 10<br>30419 Hannover</address>
+    </div>
+    <div>
+      <h2>Navigation</h2>
+      <ul>
+        <li><a href="leistungen.html">Leistungen</a></li>
+        <li><a href="branchen.html">Branchen</a></li>
+        <li><a href="ausstattung.html">Ausstattung</a></li>
+        <li><a href="ueber-uns.html">Über uns</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Kontakt</h2>
+      <ul>
+        <li><a href="tel:+4951151569000">Tel. +49 511 5156-9000</a></li>
+        <li><span style="display:inline-flex;min-height:36px;align-items:center">Fax +49 511 5156-9001</span></li>
+        <li><a href="mailto:info@hitest.de">info@hitest.de</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Qualität</h2>
+      <p>ISO 9001:2015 zertifiziert (TÜV Nord)<br>DLR-gelistetes Testhaus für EEE-Bauteile</p>
+      <a href="http://www.hitest.de/downloads.php?id=215" class="mt-2">Zertifikat (PDF)</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container-site flex flex-wrap items-center justify-between gap-4 py-6">
+      <p>© <span id="year">2026</span> Hitest GmbH</p>
+      <ul class="flex gap-6">
+        <li><a href="impressum.html">Impressum</a></li>
+        <li><a href="datenschutz.html">Datenschutz</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<!-- ============ /FOOTER ============ -->
+
+</body>
+</html>

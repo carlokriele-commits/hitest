@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Hitest GmbH – Testhaus für Mikroelektronik und Hochfrequenz-Komponenten</title>
+  <meta name="description" content="Unabhängiges Testhaus in Hannover: Testentwicklung, Qualifikation, Serientest bis 50 GHz und Fehleranalyse elektronischer Bauteile – seit 1989.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      corePlugins: { preflight: false },
+      theme: {
+        extend: {
+          colors: {
+            primary: 'var(--color-primary)', secondary: 'var(--color-secondary)', accent: 'var(--color-accent)',
+            bg: 'var(--color-bg)', text: 'var(--color-text)', muted: 'var(--color-muted)', line: 'var(--color-line)',
+          },
+          fontFamily: { display: 'var(--font-display)', body: 'var(--font-body)', mono: 'var(--font-mono)' },
+        },
+        fontSize: {
+          xs: 'var(--text-xs)', sm: 'var(--text-sm)', base: 'var(--text-base)', lg: 'var(--text-lg)',
+          xl: 'var(--text-xl)', '2xl': 'var(--text-2xl)', '3xl': 'var(--text-3xl)', '4xl': 'var(--text-4xl)',
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+
+<!-- ============ HEADER (auf allen Seiten identisch) ============ -->
+<header class="site-header">
+  <div class="container-site site-header__inner">
+    <a href="index.html" class="site-logo" aria-label="Hitest GmbH – Startseite">
+      <!-- TODO: Logo durch Vektorversion (brand_assets/) ersetzen -->
+      <img src="http://www.hitest.de/bilder/layout/logo.gif" alt="Hitest" width="120" height="36">
+    </a>
+    <nav class="nav-main" data-nav aria-label="Hauptnavigation">
+      <a href="leistungen.html">Leistungen</a>
+      <a href="branchen.html">Branchen</a>
+      <a href="ausstattung.html">Ausstattung</a>
+      <a href="ueber-uns.html">Über uns</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+    <div class="header-actions">
+      <a href="tel:+4951151569000" class="header-phone">+49 511 5156-9000</a>
+      <a href="kontakt.html" class="btn btn-accent header-cta">Testanfrage stellen</a>
+      <button class="menu-toggle" type="button" aria-controls="mobile-menu" aria-expanded="false" aria-label="Menü öffnen">
+        <svg data-icon="open" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg data-icon="close" hidden width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<div id="mobile-menu" class="mobile-menu">
+  <nav data-nav aria-label="Mobile Navigation">
+    <a href="index.html">Start <span aria-hidden="true">→</span></a>
+    <a href="leistungen.html">Leistungen <span aria-hidden="true">→</span></a>
+    <a href="branchen.html">Branchen <span aria-hidden="true">→</span></a>
+    <a href="ausstattung.html">Ausstattung <span aria-hidden="true">→</span></a>
+    <a href="ueber-uns.html">Über uns <span aria-hidden="true">→</span></a>
+    <a href="kontakt.html">Kontakt <span aria-hidden="true">→</span></a>
+  </nav>
+  <div class="mobile-menu__contact">
+    <a href="kontakt.html" class="btn btn-accent" style="width:100%;margin-bottom:var(--space-2)">Testanfrage stellen</a>
+    <a href="tel:+4951151569000">+49 511 5156-9000</a>
+    <a href="mailto:info@hitest.de">info@hitest.de</a>
+  </div>
+</div>
+<!-- ============ /HEADER ============ -->
+
+<main>
+
+  <!-- B2 · Hero -->
+  <section class="section" style="padding-top:var(--space-6)">
+    <div class="container-site grid gap-10 md:grid-cols-12 md:items-center">
+      <div class="md:col-span-7">
+        <p class="eyebrow">Testhaus · Hannover · seit 1989</p>
+        <h1 class="mt-4">Unabhängiges Testhaus für Mikro&shy;elektronik</h1>
+        <p class="lead mt-6">Qualifikation, Serientest und Fehleranalyse elektronischer Bauteile – bis 50&nbsp;GHz, für Raumfahrt, Automotive, Medizintechnik und Industrie.</p>
+        <div class="mt-8 flex flex-wrap items-center gap-4">
+          <a href="kontakt.html" class="btn btn-accent">Testanfrage stellen</a>
+          <a href="leistungen.html" class="link-arrow">Leistungen ansehen <span aria-hidden="true">→</span></a>
+        </div>
+        <p class="mt-6 text-sm muted">Oder direkt anrufen: <a href="tel:+4951151569000" class="link mono">+49 511 5156-9000</a></p>
+      </div>
+      <figure class="media md:col-span-5" style="aspect-ratio:4/5;box-shadow:var(--shadow-floating)">
+        <img src="https://images.unsplash.com/photo-1576141546153-3e04370b5ff7?auto=format&fit=crop&w=800&h=1000&q=75" alt="Automatisches Testsystem mit Testkopf im Hitest-Labor" width="800" height="1000">
+          <!-- Demo-Bild (Unsplash) – vor Launch durch eigenes Hitest-Foto ersetzen -->
+      </figure>
+    </div>
+  </section>
+
+  <!-- B3 · Fakten-Leiste -->
+  <section class="grid-bg" aria-labelledby="facts-title">
+    <div class="container-site section" style="padding-block:var(--space-8)">
+      <h2 id="facts-title" class="sr-only">Hitest in Zahlen</h2>
+      <dl class="facts grid gap-x-6 gap-y-10">
+        <div><dt class="fact-value">bis 50 GHz</dt><dd class="fact-label">Hochfrequenz im Serientest – Wafer und Komponenten</dd></div>
+        <div><dt class="fact-value">−195 bis +300 °C</dt><dd class="fact-label">Testtemperaturbereich für Qualifikation und Analyse</dd></div>
+        <div><dt class="fact-value">5–10 Jahre</dt><dd class="fact-label">identische Testwiederholung für Rückläufer</dd></div>
+        <div><dt class="fact-value">seit 1989</dt><dd class="fact-label">Erfahrung in der Prüfung elektronischer Bauteile</dd></div>
+      </dl>
+      <p class="norm-strip mt-10 pt-6" style="border-top:1px solid var(--color-line-strong)">
+        ISO 9001:2015 (TÜV Nord) · DLR-gelistetes Testhaus · Normen: MIL-STD · ESCC · NASA-STD · JEDEC · AEC-Q
+      </p>
+    </div>
+  </section>
+
+  <!-- B4 · Lebenszyklus -->
+  <section class="section" aria-labelledby="lifecycle-title">
+    <div class="container-site">
+      <p class="eyebrow">Leistungen</p>
+      <h2 id="lifecycle-title" class="mt-3" style="max-width:20ch">Vom ersten Testkonzept bis zur Ausfallanalyse</h2>
+      <p class="lead mt-4">Wir begleiten ein Bauteil durch sein ganzes Leben – oder genau an der Stelle, an der Sie Unterstützung brauchen.</p>
+      <ol class="lifecycle mt-12">
+        <li><a class="lifecycle-step" href="leistungen.html#testentwicklung">
+          <span class="lifecycle-step__num">01</span>
+          <h3>Test entwickeln</h3>
+          <p>Schlüsselfertige Testprogramme und Testhardware – vom Konzept bis zur Übergabe in die Produktion.</p>
+          <span class="link-arrow">Testentwicklung <span aria-hidden="true">→</span></span>
+        </a></li>
+        <li><a class="lifecycle-step" href="leistungen.html#qualifikation">
+          <span class="lifecycle-step__num">02</span>
+          <h3>Qualifizieren</h3>
+          <p>Stresstests, Upscreening und Lot Acceptance nach MIL-STD, ESCC, JEDEC oder Ihrer eigenen Vorschrift.</p>
+          <span class="link-arrow">Qualifikation <span aria-hidden="true">→</span></span>
+        </a></li>
+        <li><a class="lifecycle-step" href="leistungen.html#serientest">
+          <span class="lifecycle-step__num">03</span>
+          <h3>In Serie testen</h3>
+          <p>Wafer und gehäuste Bauteile – digital, analog, Mixed Signal und Hochfrequenz bis 50&nbsp;GHz.</p>
+          <span class="link-arrow">Serientest <span aria-hidden="true">→</span></span>
+        </a></li>
+        <li><a class="lifecycle-step" href="leistungen.html#fehleranalyse">
+          <span class="lifecycle-step__num">04</span>
+          <h3>Ausfälle analysieren</h3>
+          <p>Wir wiederholen Ihren Produktionstest bis zu 10 Jahre später – unter identischen Bedingungen.</p>
+          <span class="link-arrow">Fehleranalyse <span aria-hidden="true">→</span></span>
+        </a></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- B5 · Spezialgebiete -->
+  <section class="section" style="padding-top:0" aria-labelledby="special-title">
+    <div class="container-site">
+      <h2 id="special-title" class="sr-only">Spezialgebiete</h2>
+      <div class="grid gap-6 lg:grid-cols-5">
+        <a href="branchen.html#raumfahrt" class="surface-elevated feature-card lg:col-span-3">
+          <figure class="media" style="aspect-ratio:16/9;border-radius:0">
+            <img src="https://images.unsplash.com/photo-1708738793054-32b71e3fc822?auto=format&fit=crop&w=1200&h=675&q=75" alt="Testboard für einen Bestrahlungstest" width="1200" height="675" loading="lazy">
+          <!-- Demo-Bild (Unsplash) – vor Launch durch eigenes Hitest-Foto ersetzen -->
+          </figure>
+          <div class="p-6 md:p-8">
+            <p class="eyebrow">Spezialgebiet Raumfahrt</p>
+            <h3 class="h2 mt-3" style="font-size:var(--text-2xl)">Raumfahrt-Bauteile qualifizieren</h3>
+            <p class="mt-3 muted">Strahlungstests (TID und SEE), Upscreening und Losfreigabe für EEE-Komponenten. Hitest ist beim DLR als Testhaus gelistet.</p>
+            <span class="link-arrow mt-5">Mehr zur Raumfahrt <span aria-hidden="true">→</span></span>
+          </div>
+        </a>
+        <a href="leistungen.html#bauteilpruefung" class="surface-elevated feature-card lg:col-span-2">
+          <figure class="media" style="aspect-ratio:16/9;border-radius:0">
+            <img src="https://images.unsplash.com/photo-1682562031780-856bb01f08e8?auto=format&fit=crop&w=800&h=450&q=75" alt="Röntgenaufnahme eines Bauteils" width="800" height="450" loading="lazy">
+          <!-- Demo-Bild (Unsplash) – vor Launch durch eigenes Hitest-Foto ersetzen -->
+          </figure>
+          <div class="p-6 md:p-8">
+            <p class="eyebrow">Bauteile vom Graumarkt</p>
+            <h3 class="mt-3" style="font-size:var(--text-xl)">Verdächtige Bauteile prüfen</h3>
+            <p class="mt-3 muted">In bis zu 10 Stufen prüfen wir – von der optischen Inspektion bis zum Burn In –, ob Bauteile echt und einsatzfähig sind. Erste Reaktion meist innerhalb weniger Minuten.</p>
+            <span class="link-arrow mt-5">Zum Prüfverfahren <span aria-hidden="true">→</span></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- B6 · Branchen -->
+  <section class="section" style="background:var(--color-white);border-block:1px solid var(--color-line)" aria-labelledby="industries-title">
+    <div class="container-site">
+      <p class="eyebrow">Branchen</p>
+      <h2 id="industries-title" class="mt-3" style="max-width:22ch">Für Anwendungen, bei denen Ausfälle keine Option sind</h2>
+      <div class="mt-10">
+        <a href="branchen.html#raumfahrt" class="industry-row">
+          <h3>Luft- und Raumfahrt</h3>
+          <p class="muted">Strahlung, extreme Temperaturen, Vibration – Qualifikation nach ESCC, MIL-STD und NASA-STD.</p>
+          <span class="link-arrow" aria-hidden="true"><span>→</span></span>
+        </a>
+        <a href="branchen.html#automotive" class="industry-row">
+          <h3>Automobilbau</h3>
+          <p class="muted">AEC-Q-Qualifikation, Stresstests und Losfreigabe für Bauteile im Fahrzeug.</p>
+          <span class="link-arrow" aria-hidden="true"><span>→</span></span>
+        </a>
+        <a href="branchen.html#medizintechnik" class="industry-row">
+          <h3>Medizintechnik</h3>
+          <p class="muted">Höchste Zuverlässigkeit und lückenlose Dokumentation jeder Prüfung.</p>
+          <span class="link-arrow" aria-hidden="true"><span>→</span></span>
+        </a>
+        <a href="branchen.html#industrie" class="industry-row">
+          <h3>Industrieelektronik</h3>
+          <p class="muted">Lange Lebensdauer, Serientest in Stückzahl und End-of-Life-Management.</p>
+          <span class="link-arrow" aria-hidden="true"><span>→</span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- B7 · Kontakt-Abschluss -->
+  <section class="cta-band" aria-labelledby="cta-title">
+    <div class="container-site section grid gap-8 md:grid-cols-12 md:items-end">
+      <div class="md:col-span-8">
+        <h2 id="cta-title">Sie haben ein Bauteil, das getestet werden muss?</h2>
+        <p class="mt-4" style="color:var(--color-on-dark)">Beschreiben Sie kurz Bauteil und Anforderung – wir melden uns schnell mit einer ersten Einschätzung.</p>
+      </div>
+      <div class="md:col-span-4 flex flex-col items-start gap-2 md:items-end">
+        <a href="kontakt.html" class="btn btn-light">Testanfrage stellen</a>
+        <a href="tel:+4951151569000" class="cta-contact">+49 511 5156-9000</a>
+        <a href="mailto:info@hitest.de" class="cta-contact">info@hitest.de</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER (auf allen Seiten identisch) ============ -->
+<footer class="site-footer">
+  <div class="container-site grid gap-10 py-16 sm:grid-cols-2 lg:grid-cols-4">
+    <div>
+      <span class="footer-logo"><img src="http://www.hitest.de/bilder/layout/logo.gif" alt="Hitest" width="100" height="30" loading="lazy"></span>
+      <p class="mt-4">Testhaus für Mikroelektronik und Hochfrequenz-Komponenten</p>
+      <address class="mt-4 not-italic">Garbsener Landstr. 10<br>30419 Hannover</address>
+    </div>
+    <div>
+      <h2>Navigation</h2>
+      <ul>
+        <li><a href="leistungen.html">Leistungen</a></li>
+        <li><a href="branchen.html">Branchen</a></li>
+        <li><a href="ausstattung.html">Ausstattung</a></li>
+        <li><a href="ueber-uns.html">Über uns</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Kontakt</h2>
+      <ul>
+        <li><a href="tel:+4951151569000">Tel. +49 511 5156-9000</a></li>
+        <li><span style="display:inline-flex;min-height:36px;align-items:center">Fax +49 511 5156-9001</span></li>
+        <li><a href="mailto:info@hitest.de">info@hitest.de</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Qualität</h2>
+      <p>ISO 9001:2015 zertifiziert (TÜV Nord)<br>DLR-gelistetes Testhaus für EEE-Bauteile</p>
+      <a href="http://www.hitest.de/downloads.php?id=215" class="mt-2">Zertifikat (PDF)</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container-site flex flex-wrap items-center justify-between gap-4 py-6">
+      <p>© <span id="year">2026</span> Hitest GmbH</p>
+      <ul class="flex gap-6">
+        <li><a href="impressum.html">Impressum</a></li>
+        <li><a href="datenschutz.html">Datenschutz</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<!-- ============ /FOOTER ============ -->
+
+</body>
+</html>
