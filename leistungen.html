@@ -89,6 +89,7 @@
       <nav class="subnav sticky" style="top:calc(var(--header-h) + var(--space-4))" aria-label="Leistungen auf dieser Seite">
         <p class="eyebrow mb-3">Auf dieser Seite</p>
         <a href="#testentwicklung">01 Testentwicklung</a>
+        <a href="#testhardware">Test-Hardware</a>
         <a href="#qualifikation">02 Qualifikation</a>
         <a href="#serientest">03 Serientest</a>
         <a href="#hochfrequenz">Hochfrequenz bis 50 GHz</a>
@@ -105,6 +106,7 @@
       <section id="testentwicklung" aria-labelledby="t1">
         <p class="eyebrow">01 · Test entwickeln</p>
         <h2 id="t1" class="mt-3">Schlüsselfertige Tests – inklusive Hardware</h2>
+        <p class="mt-4"><strong>Unser Ziel: der optimale Test.</strong> Wir steigen so früh ein, wie Sie möchten – schon in der Applikationsidee mit Teststrategie, Design for Testability und Testspezifikation, auf Wunsch auch als reine Beratung.</p>
         <p class="mt-4">Wir entwickeln Qualifikations- und Serientests mit allen nötigen Komponenten. Ausgangspunkt sind Ihre Bauteil- und Testspezifikation und das Umfeld, in dem der Test später laufen soll. Jeder Schritt baut auf dem vorigen auf:</p>
         <ol class="mt-6 grid gap-3 sm:grid-cols-2">
           <li class="surface p-4"><span class="mono text-sm" style="color:var(--color-primary)">1</span> Testkonzept</li>
@@ -115,14 +117,47 @@
           <li class="surface p-4"><span class="mono text-sm" style="color:var(--color-primary)">6</span> Transfer in die Produktion</li>
         </ol>
         <p class="mt-6 muted">Zur Testentwicklung gehört auch die Definition der Ergebnisdaten – etwa statistische Auswertungen, Messwertdaten oder Wafermaps. Bestehende Testprogramme konvertieren wir auf unsere Systeme.</p>
+        <div class="surface mt-8 p-6" style="border-left:4px solid var(--color-primary)">
+          <h3>Testoptimierung</h3>
+          <p class="mt-2">Auch laufende Tests machen wir besser – bei <strong>Testzeit</strong>, <strong>Yield</strong>, <strong>Stabilität</strong> und <strong>Fehlerabdeckung</strong>. Ein Beispiel aus der Praxis: höhere Ausbeute allein durch bessere Signalqualität im Testaufbau.</p>
+        </div>
         <a class="download mt-4" href="http://www.hitest.de/downloads.php?id=191">Entwicklung und Optimierung von Bauteiletests <small>PDF · 77 kB</small></a>
+      </section>
+
+      <!-- Test-Hardware -->
+      <section id="testhardware" aria-labelledby="t1b">
+        <p class="eyebrow">Eigene Entwicklung</p>
+        <h2 id="t1b" class="mt-3" style="font-size:var(--text-2xl)">Test-Hardware aus eigener Konstruktion</h2>
+        <p class="mt-4">Konzeption, Layout und Produktion aus einer Hand – passend zu unseren Testsystemen oder zu Ihren.</p>
+        <div class="mt-6 grid gap-6 sm:grid-cols-2">
+          <div class="surface p-6">
+            <h3>DUT Boards</h3>
+            <p class="mt-2 text-sm muted">Für V93000, HP83000 F660 und F330 sowie HP9494.</p>
+          </div>
+          <div class="surface p-6">
+            <h3>Nadelkarten &amp; Load Boards</h3>
+            <p class="mt-2 text-sm muted">Rechteckig (HP83000) und rund (V93000). Kontakttechnik: Standard- und HF-Nadeln, Blades, Vertical Probes, Membrane Probes.</p>
+          </div>
+          <div class="surface p-6">
+            <h3>Qualification Boards</h3>
+            <p class="mt-2 text-sm muted">Für Burn In, ELFR, HTOL, THB, HAST und Latch Up.</p>
+          </div>
+          <div class="surface p-6">
+            <h3>Burn-In-Boards</h3>
+            <p class="mt-2 text-sm muted">Verschiedene Formate für dedizierte Burn-In-Systeme und Standardöfen – vom einfachen Biased Burn In bis zum komplexen Smart Burn In.</p>
+          </div>
+        </div>
       </section>
 
       <!-- 02 Qualifikation -->
       <section id="qualifikation" aria-labelledby="t2">
         <p class="eyebrow">02 · Qualifizieren</p>
-        <h2 id="t2" class="mt-3">Qualifikation, Upscreening und Lot Acceptance</h2>
-        <div class="mt-6 grid gap-10 md:grid-cols-2">
+        <h2 id="t2" class="mt-3">Charakterisierung, Qualifikation, Upscreening</h2>
+        <div class="surface mt-6 p-6">
+          <h3>Charakterisierung von Prototypen</h3>
+          <p class="mt-2">Bevor ein Bauteil qualifiziert wird, zeigen wir, was es wirklich kann: elektrischer Test zur Funktionsverifikation, Parametermessungen, Corner-Edge-Messungen bei verschiedenen Spannungen und Temperaturen, ESD-Tests, Stabilitätsauswertungen und Burn In.</p>
+        </div>
+        <div class="mt-8 grid gap-10 md:grid-cols-2">
           <div>
             <h3>Qualifikation</h3>
             <p class="mt-2">Für Automotive und Raumfahrt wird oft eine Qualifikation verlangt. Wir entwickeln Hardware und Testprogramme, führen die Stresstests durch, werten aus und erstellen die Unterlagen zur Zertifizierung – komplett oder als Einzeltest.</p>
@@ -151,7 +186,7 @@
           <p class="mt-2">In kritischen Anwendungen wird jedes Produktionslos vor der Weiterverarbeitung freigegeben. Wir entwickeln das Verfahren – als Teil eines Upscreenings, nach Ausfällen im Feld (gemeinsame Fehleranalyse, dann Stichprobentest je Los) oder als Qualitätskontrolle nach IEC 62240 für Bauteile außerhalb ihres Temperaturbereichs.</p>
         </div>
         <p class="mt-6 flex flex-wrap gap-2">
-          <span class="tag">MIL-STD-883</span><span class="tag">MIL-STD-750</span><span class="tag">ESCC</span><span class="tag">NASA-STD</span><span class="tag">JEDEC</span><span class="tag">AEC-Q</span><span class="tag">DIN · ISO · IEC</span><span class="tag">Kundenvorschrift</span>
+          <span class="tag">MIL-STD-883</span><span class="tag">MIL-STD-750</span><span class="tag">ESCC</span><span class="tag">NASA-STD</span><span class="tag">JEDEC</span><span class="tag">AEC-Q</span><span class="tag">Telcordia</span><span class="tag">DIN · ISO · IEC</span><span class="tag">Kundenvorschrift</span>
         </p>
         <a class="download mt-4" href="http://www.hitest.de/downloads.php?id=195">Qualifikationen, Upscreenings und Lot Acceptance Tests <small>PDF · 205 kB</small></a>
       </section>
@@ -183,7 +218,8 @@
             <p class="mt-3 text-sm muted">QFP, QFN, BGA, PLCC, CLCC, SOP, DIL u. a. – manuell auch diskrete Bauteile.</p>
           </div>
         </div>
-        <p class="mt-6">Aus den Messdaten erstellen wir Datenlogs, Statistiken, Histogramme, Shmoo Plots und Delta-Kalkulationen – um Tests zu optimieren, Prozesse zu überwachen oder Alterungseffekte bei Qualifikationen sichtbar zu machen.</p>
+        <p class="mt-6">Produktionstests laufen bei uns in <strong>2 oder 3 Schichten pro Tag, 5 Tage pro Woche</strong> – Wafertest vollautomatisch bis 8" (single bis octal site), Finaltest manuell oder automatisch.</p>
+        <p class="mt-4">Aus den Messdaten erstellen wir Wafermaps mit Summary, Histogramme, Shmoo- und Scatter-Plots, Pass/Fail- und Bin-Daten, Delta-Kalkulationen und PDA-Berechnungen (Percentage Defective Allowable) – in den Dateiformaten, die Sie brauchen. So lassen sich Tests optimieren, Prozesse überwachen und Alterungseffekte bei Qualifikationen sichtbar machen.</p>
         <a class="download mt-4" href="http://www.hitest.de/downloads.php?id=193">Test von Komponenten <small>PDF · 472 kB</small></a>
 
         <!-- Hochfrequenz -->
@@ -201,6 +237,7 @@
               <li>Bandbreite von Verstärkern und Filtern, Rauschzahlen (LNA, OpAmps)</li>
               <li>Time Domain Reflectometry für Leiterbahnen</li>
               <li>Vektor-Signalanalyse bis 2,6 GHz, Modulationsanalyse bis 26,5 GHz</li>
+              <li>Opto: Charakterisierung von LEDs, Optical Stimulus Response, Optical Source Characterization, Wandlerkennlinien</li>
             </ul>
             <a class="download mt-4" href="http://www.hitest.de/downloads.php?id=194">Hochfrequenztests für Qualifikation und Produktion <small>PDF · 215 kB</small></a>
           </div>
@@ -215,9 +252,10 @@
         <p class="mt-4">Reicht das nicht, gehen wir weiter – bis zur Reproduktion des Fehlers und zu fehlerspezifischen Test- und Vermeidungsstrategien:</p>
         <ul class="list-tick list-cols mt-4 text-sm">
           <li>Elektrische Analysen von −195 °C bis +300 °C</li>
-          <li>Optische Mikroskopie, Röntgen</li>
+          <li>Licht-, Röntgen-, Ultraschall- und Rasterelektronenmikroskopie</li>
+          <li>Thermographie</li>
           <li>DPA, SAM, PIND</li>
-          <li>Chemisches/mechanisches Öffnen</li>
+          <li>Chemisches/mechanisches Öffnen, Materialanalyse</li>
           <li>ESD-Tests, Leakage Tests</li>
           <li>Pressure Cooker, HAST</li>
           <li>Mechanischer Schock, Vibration</li>
@@ -324,6 +362,8 @@
           <div>
             <h3>Kostengünstiger Final Test</h3>
             <p class="mt-2 muted">Ein großer Teil der NRE-Kosten steckt im Test Board. Unsere Lösung: ein systemspezifisches Motherboard bleibt, nur eine kleine, bauteilspezifische Daughtercard wird neu gebaut. Das senkt die Einmalkosten deutlich – bei etwas geringeren Anforderungen.</p>
+            <h3 class="mt-6">Consulting</h3>
+            <p class="mt-2 muted">Teststrategie, Design for Testability, Testspezifikation und Auswahl des passenden Qualifikationsstandards – auch ohne anschließenden Testauftrag.</p>
           </div>
         </div>
       </section>

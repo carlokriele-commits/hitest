@@ -87,6 +87,19 @@
   <!-- PFLEGEHINWEIS: Gerätedaten aus der alten Website übernommen. Aktualität mit Hitest klären.
        Zeilen einfach kopieren/löschen – jede <tr> ist ein Gerät. -->
 
+  <!-- Infrastruktur (Firmenpräsentation V1.8) -->
+  <section class="section" style="padding-bottom:0" aria-labelledby="a0">
+    <div class="container-site">
+      <h2 id="a0" class="sr-only">Infrastruktur</h2>
+      <dl class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="surface p-6"><dt class="fact-value">400 m²</dt><dd class="fact-label">Laborfläche</dd></div>
+        <div class="surface p-6"><dt class="fact-value">300 m²</dt><dd class="fact-label">Reinraum, Klasse 10.000 und 1.000</dd></div>
+        <div class="surface p-6"><dt class="fact-value">2–3 Schichten</dt><dd class="fact-label">Produktionstest an 5 Tagen pro Woche, mit vollständiger Logistik</dd></div>
+        <div class="surface p-6"><dt class="fact-value">5 Medien</dt><dd class="fact-label">Versorgung mit Strom, Klima, Druck, Vakuum und Kühlflüssigkeit</dd></div>
+      </dl>
+    </div>
+  </section>
+
   <section class="section" aria-labelledby="a1">
     <div class="container-site grid gap-10 lg:grid-cols-12">
       <div class="lg:col-span-4">
@@ -105,8 +118,8 @@
             <tr><td>HP83000 F330t</td><td class="mono">160 · 330 MHz</td><td>Mixed Signal, Testkopf mit Manipulator</td></tr>
             <tr><td>HP83000 F330t</td><td class="mono">128 · 330 MHz</td><td>Testkopf mit Manipulator</td></tr>
             <tr><td>HP83000 F330t</td><td class="mono">96 · 330 MHz</td><td>Mixed Signal, Testkopf mit Manipulator</td></tr>
-            <tr><td>HP83000 F660i</td><td class="mono">256 · 660 MHz</td><td>±50 ps Genauigkeit</td></tr>
-            <tr><td>HP83000 F660i</td><td class="mono">256 · 660 MHz</td><td>±50 ps Genauigkeit</td></tr>
+            <tr><td>HP83000 F660i</td><td class="mono">256 · 660 MHz</td><td>±50 ps Genauigkeit, 10 ps Auflösung, 16 PMUs, algorithmischer Mustergenerator</td></tr>
+            <tr><td>HP83000 F660i</td><td class="mono">256 · 660 MHz</td><td>wie oben – zusammen bis 512 Kanäle, bis 1,2 GHz</td></tr>
             <tr><td>E8400 VXI Mainframe</td><td class="mono">konfigurierbar</td><td>Steuerung projektspezifischer Testaufbauten</td></tr>
             <tr><td>Hitest Minitester</td><td class="mono">transportabel</td><td>Automatischer Test bei Bestrahlungen</td></tr>
           </tbody>
@@ -115,7 +128,9 @@
         <table class="spec-table mt-3">
           <thead><tr><th scope="col">Typ</th><th scope="col">Bereich</th><th scope="col">Hersteller</th></tr></thead>
           <tbody>
-            <tr><td>Waferprober</td><td class="mono">3"–8" · 0 bis 150 °C</td><td>Wentworth, KLA, TSK</td></tr>
+            <tr><td>Waferprober vollautomatisch</td><td class="mono">bis 8"</td><td>TSK für Serientests; KLA für Hochfrequenz-Serientests bis 6"</td></tr>
+            <tr><td>Waferprober halbautomatisch</td><td class="mono">Einzelwafer</td><td>Wentworth</td></tr>
+            <tr><td>Waferprober manuell</td><td class="mono">Einzeldies</td><td>Cascade Summit</td></tr>
             <tr><td>Handler</td><td class="mono">5×5–28×28 mm · −40 bis 200 °C</td><td>Advantest (Pick &amp; Place), Multitest, Microhandling (Gravity) – QFN, BGA, QFP, LCC, DIL, SO, TSOP</td></tr>
           </tbody>
         </table>
